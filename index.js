@@ -23,10 +23,13 @@ app.set('view engine', '.hbs');
 //RENDER THE INDEX.HBS PAGE
 app.get('/', async(req, res) =>{
     let data = await getWeather();
-    console.log(data)
-    res.render('index', {data: "hello from express"});
+    let temp = data.main.temp
+    let country = data.sys.country
+    let desc = data.weather[0].description
+    let name = data.name
+    res.render('index', {data:{temp, country, desc, name}});
 });
 
 app.listen(3000, () => {
-    console.log('server listning on port 3000');
+    console.log('server listening on port 3000');
 });

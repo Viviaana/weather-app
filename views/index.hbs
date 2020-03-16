@@ -1,3 +1,7 @@
 <h1>Current Weather Data</h1>
 
-<p>{{data}}</p>
+<ul>
+    {{#each data}}
+        <li>{{@key}} : {{this}}</li>
+    {{/each}}
+</ul>
