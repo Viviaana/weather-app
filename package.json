@@ -7,11 +7,13 @@
     "lib": "lib"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "node-fetch": "^2.6.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "request": "^2.88.2"
   },
   "devDependencies": {},
   "scripts": {
@@ -19,5 +21,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viviaana/weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Viviaana/weather-app/issues"
+  },
+  "homepage": "https://github.com/Viviaana/weather-app#readme"
 }
