@@ -30,7 +30,7 @@ app.get('/', (req, res) =>{
 
 app.post("/", async(req, res) =>{
     let city = req.body.city
-    let data = await getWeather();
+    let data = await getWeather(city);
 
     let temp = data.main.temp
     let country = data.sys.country
